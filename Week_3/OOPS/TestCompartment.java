@@ -8,7 +8,7 @@ public class TestCompartment {
         Random rand = new Random();
 
         for (int i = 0; i < compartments.length; i++) {
-            int choice = rand.nextInt(4) + 1; // random number 1–4
+            int choice = rand.nextInt(4) + 1; 
 
             switch (choice) {
                 case 1: compartments[i] = new FirstClass(); break;
@@ -18,7 +18,7 @@ public class TestCompartment {
             }
         }
 
-        // Polymorphic behavior
+        
         for (Compartment c : compartments) {
             System.out.println(c.notice());
         }
